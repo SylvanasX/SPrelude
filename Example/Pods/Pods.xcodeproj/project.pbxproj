@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1854A14AB4C841109DE4710B14C6E966 /* Ordering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FEFCECD7677402AB3417608283FA54 /* Ordering.swift */; };
+		20CC9EBAED1528C5250432107A96A16E /* VectorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A3FBB245BCCE56753A67A52208D8B /* VectorType.swift */; };
+		2747628B4633B94D7A2752CE7C198A03 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD05533F5C79670DDF797177EB4BDE9A /* Array.swift */; };
+		300E52C20E222BF2E2FB4A3B253ED8B4 /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E6AC78A557978BEEA8B75CDED8978 /* Tuple.swift */; };
+		3461CF84D6C5DF18842D678E1DD36D87 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5749EC06C6851FD3C8FE8E49454336 /* Monoid.swift */; };
+		47123932084C3F75C2392DE578105F2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		57CD2EA77BFF97066963EDA9E8079078 /* NumericType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB29D6C9DF4EF7DD8206784252F8636 /* NumericType.swift */; };
+		5D8744E8C5A76B35E19D2F88DCB0B80A /* LensHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A227B8ED4D523AA2B1AE2B68458D52 /* LensHolder.swift */; };
+		5EAEF8CB567309D09C4FBAEEBFE5BE78 /* Pods-SPrelude_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30975179D8161C19C1C3EE3D3EAE3BF8 /* Pods-SPrelude_Example-dummy.m */; };
+		621881B50B2EAC40968AFE67BDDBA9C8 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36589880803CF3C7ED0FB332805E20B /* Either.swift */; };
+		6C37B9E3C1BDBE213F604AEE9B18958B /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE14614AC0DE5C88893E30BCEE7A828 /* Operators.swift */; };
+		78D4986D09E75E81D4F892D1CB687781 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E1FD0FD79F91D3CFF18F7290A0EEF8 /* Function.swift */; };
+		7B4A6ED72E4F0975CE8433C27F1076C7 /* Unpack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B9233B670FFFB48628DE7A4BDD3B20 /* Unpack.swift */; };
+		9E7A21718BE6F080FB98E96227511827 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 67D4FC61BF26B8E89E7647A509D8C733 /* Info.plist */; };
+		ACA764D94B25641A2B7C41F79F1F5862 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAD9FADFF60F9126FE7C6928581074B /* Optional.swift */; };
+		AD7B420755B0F4A9D8B42C73FD8D9196 /* NonEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9065B83882F9B404DF84E9D32EC3AE /* NonEmpty.swift */; };
+		B6502EA9952E8C36F5AB85C8D6D56141 /* Pods-SPrelude_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D6B146C97522F05BF46E5480F10ADC6 /* Pods-SPrelude_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B665741029D9EA91483FE801543CD1FC /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B017B6E0A744C21CC0B0E076DFB6765 /* Lens.swift */; };
+		BEB4E5534A6A8B5634750C1705B1CD2C /* Pods-SPrelude_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825E4526E1BC9D0D3399C54F6F82483 /* Pods-SPrelude_Tests-dummy.m */; };
+		C0D9E59E5C9894651E061C5276937E0E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C5E98E597E278528F5CAFF11CD9552 /* Dictionary.swift */; };
+		C1153579A005C6351BF236073B7AB551 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EF75D9E74BF88A0EB0D4C45A317A05 /* Semigroup.swift */; };
+		CB16B4E4955E6C9D274B27F6BE527137 /* SPrelude-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CC56D9B400D4AC5B5C323DB44F22B6 /* SPrelude-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE17649D48ED311AB1AA151796194A67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D4836C37F6E4D6EECDC6C42C9F092B30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E088F952B94DACDA1E297324523055A0 /* SomeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821544A204E452084DF6A1EB49615D0B /* SomeError.swift */; };
+		E1952AC46DA871AB22A7A10DF606FD2D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444DF180D47F9E5C46289DD7873EC98C /* String.swift */; };
+		ECD480E54DF47943ABCF2BAD8AAD4BCA /* Pods-SPrelude_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 794E267009FCCDC14561993805C16158 /* Pods-SPrelude_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE28D610BA890DC11A472E9BAD86AB97 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606D0D464D13A5BBACF3C9503E391233 /* Empty.swift */; };
+		F53E79C11F1E930F9A0A6DEC28A049FA /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB85415E5EB0B85A9B8A25C80FCD6C4 /* Comparable.swift */; };
+		F5B2DFBCC11CF7049F61A9E84CDBFFC9 /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7721AC89E0ECFEF4A9FF8908D0D340A4 /* Bool.swift */; };
+		F6E94477F164B66833FE3710051EE738 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41D0E2F34E8A18201F1AE8DE1C14F16 /* Unit.swift */; };
+		F94009A29CB6D9EDED826065D5F13E88 /* Comparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0539FC41042462E9C89F4BDF2176C3 /* Comparator.swift */; };
+		F9B7FD21E2093F57A2D1AEDA19A62756 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158BE10AB8AED04564BCA7DC366D696B /* Set.swift */; };
+		FF7237E6BC209138FDFA23A3ECA797E0 /* SPrelude-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F60E9861A590E45E13EF1AA52363A /* SPrelude-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D37A5FD45EA7F67F31CAEB149B334EC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4782A95C75048D9AC03520A54483E89B;
+			remoteInfo = SPrelude;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0366F58B41CCEB764DCAE896EC458C2E /* Pods-SPrelude_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SPrelude_Example-resources.sh"; sourceTree = "<group>"; };
+		0922E53478AA47AC40BBE60D2FA8EE9D /* Pods-SPrelude_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SPrelude_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		0AA675A7F26A088F9269EBA21EBCDFE9 /* Pods-SPrelude_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SPrelude_Example-frameworks.sh"; sourceTree = "<group>"; };
+		14EF75D9E74BF88A0EB0D4C45A317A05 /* Semigroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Semigroup.swift; path = SPrelude/Classes/Semigroup.swift; sourceTree = "<group>"; };
+		158BE10AB8AED04564BCA7DC366D696B /* Set.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Set.swift; path = SPrelude/Classes/Set.swift; sourceTree = "<group>"; };
+		17FEFCECD7677402AB3417608283FA54 /* Ordering.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ordering.swift; path = SPrelude/Classes/Ordering.swift; sourceTree = "<group>"; };
+		21E1FD0FD79F91D3CFF18F7290A0EEF8 /* Function.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Function.swift; path = SPrelude/Classes/Function.swift; sourceTree = "<group>"; };
+		2D6B146C97522F05BF46E5480F10ADC6 /* Pods-SPrelude_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SPrelude_Example-umbrella.h"; sourceTree = "<group>"; };
+		30975179D8161C19C1C3EE3D3EAE3BF8 /* Pods-SPrelude_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SPrelude_Example-dummy.m"; sourceTree = "<group>"; };
+		3A0F60E9861A590E45E13EF1AA52363A /* SPrelude-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SPrelude-dummy.m"; sourceTree = "<group>"; };
+		3D9065B83882F9B404DF84E9D32EC3AE /* NonEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonEmpty.swift; path = SPrelude/Classes/NonEmpty.swift; sourceTree = "<group>"; };
+		444DF180D47F9E5C46289DD7873EC98C /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = SPrelude/Classes/String.swift; sourceTree = "<group>"; };
+		44C5E98E597E278528F5CAFF11CD9552 /* Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = SPrelude/Classes/Dictionary.swift; sourceTree = "<group>"; };
+		47B9233B670FFFB48628DE7A4BDD3B20 /* Unpack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Unpack.swift; path = SPrelude/Classes/Unpack.swift; sourceTree = "<group>"; };
+		4825E4526E1BC9D0D3399C54F6F82483 /* Pods-SPrelude_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SPrelude_Tests-dummy.m"; sourceTree = "<group>"; };
+		486B1E9FB10F3EAD582A3E1090647C8A /* SPrelude-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPrelude-prefix.pch"; sourceTree = "<group>"; };
+		4C5749EC06C6851FD3C8FE8E49454336 /* Monoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Monoid.swift; path = SPrelude/Classes/Monoid.swift; sourceTree = "<group>"; };
+		547EF9C0BF3D9F63F2F22120A21388B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BFDC7EF582305A79696E5D99C9E6E9 /* Pods-SPrelude_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SPrelude_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A3EFCC7C9C53AB3542A282C514E9683 /* Pods-SPrelude_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SPrelude_Tests-resources.sh"; sourceTree = "<group>"; };
+		5AD322C8595CF56E10C16A115A1A5000 /* Pods-SPrelude_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SPrelude_Example.modulemap"; sourceTree = "<group>"; };
+		5BB0F1AE48C2EADC7B75C0E9290E97D5 /* Pods-SPrelude_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPrelude_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		606D0D464D13A5BBACF3C9503E391233 /* Empty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Empty.swift; path = SPrelude/Classes/Empty.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67D4FC61BF26B8E89E7647A509D8C733 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = SPrelude/Classes/Info.plist; sourceTree = "<group>"; };
+		6A3E6AC78A557978BEEA8B75CDED8978 /* Tuple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tuple.swift; path = SPrelude/Classes/Tuple.swift; sourceTree = "<group>"; };
+		6B017B6E0A744C21CC0B0E076DFB6765 /* Lens.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lens.swift; path = SPrelude/Classes/Lens.swift; sourceTree = "<group>"; };
+		6DE14614AC0DE5C88893E30BCEE7A828 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = SPrelude/Classes/Operators.swift; sourceTree = "<group>"; };
+		6F59695D9ABC1E085A434683A3C1B583 /* Pods-SPrelude_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SPrelude_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		712CF721022CAF6A89397BA739E4216E /* SPrelude.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SPrelude.modulemap; sourceTree = "<group>"; };
+		7252DBFBBD7336B860598F631C05023C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		76A89E3B11C660A1912822A9BE9A6998 /* SPrelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPrelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7721AC89E0ECFEF4A9FF8908D0D340A4 /* Bool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bool.swift; path = SPrelude/Classes/Bool.swift; sourceTree = "<group>"; };
+		794E267009FCCDC14561993805C16158 /* Pods-SPrelude_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SPrelude_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7DD66B73E732431257BAE0AFE47BD59A /* Pods-SPrelude_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPrelude_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		821544A204E452084DF6A1EB49615D0B /* SomeError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SomeError.swift; path = SPrelude/Classes/SomeError.swift; sourceTree = "<group>"; };
+		8DB29D6C9DF4EF7DD8206784252F8636 /* NumericType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NumericType.swift; path = SPrelude/Classes/NumericType.swift; sourceTree = "<group>"; };
+		8FA7FD13D5EA672336B3FA83BCAC78DF /* Pods_SPrelude_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPrelude_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C4BA7A6CE4E5A2950AA3AE368BF8C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D646B532685079DF934E7660D96A5B /* Pods-SPrelude_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SPrelude_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96A227B8ED4D523AA2B1AE2B68458D52 /* LensHolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LensHolder.swift; path = SPrelude/Classes/LensHolder.swift; sourceTree = "<group>"; };
+		9872032249DB1DD6BA0D56B596102AFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B8611FBEBB94B9ECA49DC2D4F614BDD0 /* Pods_SPrelude_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPrelude_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB85415E5EB0B85A9B8A25C80FCD6C4 /* Comparable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comparable.swift; path = SPrelude/Classes/Comparable.swift; sourceTree = "<group>"; };
+		BD05533F5C79670DDF797177EB4BDE9A /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = SPrelude/Classes/Array.swift; sourceTree = "<group>"; };
+		C32A5258C27F4383E8FB366C03AD8BDF /* Pods-SPrelude_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SPrelude_Tests.modulemap"; sourceTree = "<group>"; };
+		C36589880803CF3C7ED0FB332805E20B /* Either.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Either.swift; path = SPrelude/Classes/Either.swift; sourceTree = "<group>"; };
+		CB0539FC41042462E9C89F4BDF2176C3 /* Comparator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comparator.swift; path = SPrelude/Classes/Comparator.swift; sourceTree = "<group>"; };
+		CF7E1E01F8630B05897C13B8C8125006 /* SPrelude.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SPrelude.podspec; sourceTree = "<group>"; };
+		D00A3FBB245BCCE56753A67A52208D8B /* VectorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VectorType.swift; path = SPrelude/Classes/VectorType.swift; sourceTree = "<group>"; };
+		D03508FFD742490AAA968844A8F54DCA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41D0E2F34E8A18201F1AE8DE1C14F16 /* Unit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Unit.swift; path = SPrelude/Classes/Unit.swift; sourceTree = "<group>"; };
+		E8CC56D9B400D4AC5B5C323DB44F22B6 /* SPrelude-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPrelude-umbrella.h"; sourceTree = "<group>"; };
+		EEF1894275A8EAE435289DFBF3960C5E /* Pods-SPrelude_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPrelude_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EFAD9FADFF60F9126FE7C6928581074B /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = SPrelude/Classes/Optional.swift; sourceTree = "<group>"; };
+		F2EB2EE1FF949A21EED900E3179C28DB /* Pods-SPrelude_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPrelude_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F7B49885859FFE2F3D170EADBE1A2480 /* Pods-SPrelude_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SPrelude_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF9D829C7A15EB7AEC7509C444112169 /* SPrelude.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPrelude.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		472CB7B5E80E3241CE1B7863CDA9CA2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4836C37F6E4D6EECDC6C42C9F092B30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BF78B480F76ADB1181E670A821DA53E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47123932084C3F75C2392DE578105F2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4DBF848E867D32B6962451EB818781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE17649D48ED311AB1AA151796194A67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00D8875CEA4B6510021AF93921E39051 /* Pods-SPrelude_Example */ = {
+			isa = PBXGroup;
+			children = (
+				90C4BA7A6CE4E5A2950AA3AE368BF8C0 /* Info.plist */,
+				5AD322C8595CF56E10C16A115A1A5000 /* Pods-SPrelude_Example.modulemap */,
+				55BFDC7EF582305A79696E5D99C9E6E9 /* Pods-SPrelude_Example-acknowledgements.markdown */,
+				F7B49885859FFE2F3D170EADBE1A2480 /* Pods-SPrelude_Example-acknowledgements.plist */,
+				30975179D8161C19C1C3EE3D3EAE3BF8 /* Pods-SPrelude_Example-dummy.m */,
+				0AA675A7F26A088F9269EBA21EBCDFE9 /* Pods-SPrelude_Example-frameworks.sh */,
+				0366F58B41CCEB764DCAE896EC458C2E /* Pods-SPrelude_Example-resources.sh */,
+				2D6B146C97522F05BF46E5480F10ADC6 /* Pods-SPrelude_Example-umbrella.h */,
+				5BB0F1AE48C2EADC7B75C0E9290E97D5 /* Pods-SPrelude_Example.debug.xcconfig */,
+				F2EB2EE1FF949A21EED900E3179C28DB /* Pods-SPrelude_Example.release.xcconfig */,
+			);
+			name = "Pods-SPrelude_Example";
+			path = "Target Support Files/Pods-SPrelude_Example";
+			sourceTree = "<group>";
+		};
+		2CF6E933487569B17CE83C32145ABE1A /* Pods-SPrelude_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				547EF9C0BF3D9F63F2F22120A21388B6 /* Info.plist */,
+				C32A5258C27F4383E8FB366C03AD8BDF /* Pods-SPrelude_Tests.modulemap */,
+				6F59695D9ABC1E085A434683A3C1B583 /* Pods-SPrelude_Tests-acknowledgements.markdown */,
+				92D646B532685079DF934E7660D96A5B /* Pods-SPrelude_Tests-acknowledgements.plist */,
+				4825E4526E1BC9D0D3399C54F6F82483 /* Pods-SPrelude_Tests-dummy.m */,
+				0922E53478AA47AC40BBE60D2FA8EE9D /* Pods-SPrelude_Tests-frameworks.sh */,
+				5A3EFCC7C9C53AB3542A282C514E9683 /* Pods-SPrelude_Tests-resources.sh */,
+				794E267009FCCDC14561993805C16158 /* Pods-SPrelude_Tests-umbrella.h */,
+				7DD66B73E732431257BAE0AFE47BD59A /* Pods-SPrelude_Tests.debug.xcconfig */,
+				EEF1894275A8EAE435289DFBF3960C5E /* Pods-SPrelude_Tests.release.xcconfig */,
+			);
+			name = "Pods-SPrelude_Tests";
+			path = "Target Support Files/Pods-SPrelude_Tests";
+			sourceTree = "<group>";
+		};
+		5A0674819A470C748DF0F9A6E6DB9C99 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3E4B551E2EA763094F1B5D7301534FB /* SPrelude */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		77F43DD3F077760327DA0EE7AA203977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8611FBEBB94B9ECA49DC2D4F614BDD0 /* Pods_SPrelude_Example.framework */,
+				8FA7FD13D5EA672336B3FA83BCAC78DF /* Pods_SPrelude_Tests.framework */,
+				76A89E3B11C660A1912822A9BE9A6998 /* SPrelude.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CFA6C49A38A32811E086349CF7DE3B1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00D8875CEA4B6510021AF93921E39051 /* Pods-SPrelude_Example */,
+				2CF6E933487569B17CE83C32145ABE1A /* Pods-SPrelude_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				5A0674819A470C748DF0F9A6E6DB9C99 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				77F43DD3F077760327DA0EE7AA203977 /* Products */,
+				7CFA6C49A38A32811E086349CF7DE3B1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE5CD613B94F1A4FC91685437E5FC4A7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D03508FFD742490AAA968844A8F54DCA /* Info.plist */,
+				712CF721022CAF6A89397BA739E4216E /* SPrelude.modulemap */,
+				FF9D829C7A15EB7AEC7509C444112169 /* SPrelude.xcconfig */,
+				3A0F60E9861A590E45E13EF1AA52363A /* SPrelude-dummy.m */,
+				486B1E9FB10F3EAD582A3E1090647C8A /* SPrelude-prefix.pch */,
+				E8CC56D9B400D4AC5B5C323DB44F22B6 /* SPrelude-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SPrelude";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DA37BE897EC9C4699A275ADF27FD39DB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7252DBFBBD7336B860598F631C05023C /* LICENSE */,
+				9872032249DB1DD6BA0D56B596102AFC /* README.md */,
+				CF7E1E01F8630B05897C13B8C8125006 /* SPrelude.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F3E4B551E2EA763094F1B5D7301534FB /* SPrelude */ = {
+			isa = PBXGroup;
+			children = (
+				BD05533F5C79670DDF797177EB4BDE9A /* Array.swift */,
+				7721AC89E0ECFEF4A9FF8908D0D340A4 /* Bool.swift */,
+				BBB85415E5EB0B85A9B8A25C80FCD6C4 /* Comparable.swift */,
+				CB0539FC41042462E9C89F4BDF2176C3 /* Comparator.swift */,
+				44C5E98E597E278528F5CAFF11CD9552 /* Dictionary.swift */,
+				C36589880803CF3C7ED0FB332805E20B /* Either.swift */,
+				606D0D464D13A5BBACF3C9503E391233 /* Empty.swift */,
+				21E1FD0FD79F91D3CFF18F7290A0EEF8 /* Function.swift */,
+				67D4FC61BF26B8E89E7647A509D8C733 /* Info.plist */,
+				6B017B6E0A744C21CC0B0E076DFB6765 /* Lens.swift */,
+				96A227B8ED4D523AA2B1AE2B68458D52 /* LensHolder.swift */,
+				4C5749EC06C6851FD3C8FE8E49454336 /* Monoid.swift */,
+				3D9065B83882F9B404DF84E9D32EC3AE /* NonEmpty.swift */,
+				8DB29D6C9DF4EF7DD8206784252F8636 /* NumericType.swift */,
+				6DE14614AC0DE5C88893E30BCEE7A828 /* Operators.swift */,
+				EFAD9FADFF60F9126FE7C6928581074B /* Optional.swift */,
+				17FEFCECD7677402AB3417608283FA54 /* Ordering.swift */,
+				14EF75D9E74BF88A0EB0D4C45A317A05 /* Semigroup.swift */,
+				158BE10AB8AED04564BCA7DC366D696B /* Set.swift */,
+				821544A204E452084DF6A1EB49615D0B /* SomeError.swift */,
+				444DF180D47F9E5C46289DD7873EC98C /* String.swift */,
+				6A3E6AC78A557978BEEA8B75CDED8978 /* Tuple.swift */,
+				D41D0E2F34E8A18201F1AE8DE1C14F16 /* Unit.swift */,
+				47B9233B670FFFB48628DE7A4BDD3B20 /* Unpack.swift */,
+				D00A3FBB245BCCE56753A67A52208D8B /* VectorType.swift */,
+				DA37BE897EC9C4699A275ADF27FD39DB /* Pod */,
+				BE5CD613B94F1A4FC91685437E5FC4A7 /* Support Files */,
+			);
+			name = SPrelude;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0CA0B0258D3AF4F33DB968E2D3B3B826 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD480E54DF47943ABCF2BAD8AAD4BCA /* Pods-SPrelude_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8F05C88810378F579677093D867572 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6502EA9952E8C36F5AB85C8D6D56141 /* Pods-SPrelude_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D91800089A2603EFF6F12F88BE91DFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB16B4E4955E6C9D274B27F6BE527137 /* SPrelude-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2AD442CB53489EDDD4CB1692B0D9FFE9 /* Pods-SPrelude_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D766BE63773113BF3B2F8A82215D29DA /* Build configuration list for PBXNativeTarget "Pods-SPrelude_Tests" */;
+			buildPhases = (
+				2054983C98DDA78C7E9C0788A4AA6589 /* Sources */,
+				9BF78B480F76ADB1181E670A821DA53E /* Frameworks */,
+				0CA0B0258D3AF4F33DB968E2D3B3B826 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SPrelude_Tests";
+			productName = "Pods-SPrelude_Tests";
+			productReference = 8FA7FD13D5EA672336B3FA83BCAC78DF /* Pods_SPrelude_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4782A95C75048D9AC03520A54483E89B /* SPrelude */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD4801FFB841E81D010AAC265F1ED61C /* Build configuration list for PBXNativeTarget "SPrelude" */;
+			buildPhases = (
+				95BAEA4339784A4B63B20CE96A5B5611 /* Sources */,
+				472CB7B5E80E3241CE1B7863CDA9CA2C /* Frameworks */,
+				9D91800089A2603EFF6F12F88BE91DFD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPrelude;
+			productName = SPrelude;
+			productReference = 76A89E3B11C660A1912822A9BE9A6998 /* SPrelude.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A32FEBB54DB383A69A7D1829DDDEC123 /* Pods-SPrelude_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC53820C0C1B161A76B2B98A135F57C8 /* Build configuration list for PBXNativeTarget "Pods-SPrelude_Example" */;
+			buildPhases = (
+				0358322402E57201E867F4A2F91F3595 /* Sources */,
+				BE4DBF848E867D32B6962451EB818781 /* Frameworks */,
+				7E8F05C88810378F579677093D867572 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E86D71F23CF9E249CC9E0F6FD40FF3E /* PBXTargetDependency */,
+			);
+			name = "Pods-SPrelude_Example";
+			productName = "Pods-SPrelude_Example";
+			productReference = B8611FBEBB94B9ECA49DC2D4F614BDD0 /* Pods_SPrelude_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 77F43DD3F077760327DA0EE7AA203977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A32FEBB54DB383A69A7D1829DDDEC123 /* Pods-SPrelude_Example */,
+				2AD442CB53489EDDD4CB1692B0D9FFE9 /* Pods-SPrelude_Tests */,
+				4782A95C75048D9AC03520A54483E89B /* SPrelude */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0358322402E57201E867F4A2F91F3595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EAEF8CB567309D09C4FBAEEBFE5BE78 /* Pods-SPrelude_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2054983C98DDA78C7E9C0788A4AA6589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB4E5534A6A8B5634750C1705B1CD2C /* Pods-SPrelude_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95BAEA4339784A4B63B20CE96A5B5611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2747628B4633B94D7A2752CE7C198A03 /* Array.swift in Sources */,
+				F5B2DFBCC11CF7049F61A9E84CDBFFC9 /* Bool.swift in Sources */,
+				F53E79C11F1E930F9A0A6DEC28A049FA /* Comparable.swift in Sources */,
+				F94009A29CB6D9EDED826065D5F13E88 /* Comparator.swift in Sources */,
+				C0D9E59E5C9894651E061C5276937E0E /* Dictionary.swift in Sources */,
+				621881B50B2EAC40968AFE67BDDBA9C8 /* Either.swift in Sources */,
+				EE28D610BA890DC11A472E9BAD86AB97 /* Empty.swift in Sources */,
+				78D4986D09E75E81D4F892D1CB687781 /* Function.swift in Sources */,
+				9E7A21718BE6F080FB98E96227511827 /* Info.plist in Sources */,
+				B665741029D9EA91483FE801543CD1FC /* Lens.swift in Sources */,
+				5D8744E8C5A76B35E19D2F88DCB0B80A /* LensHolder.swift in Sources */,
+				3461CF84D6C5DF18842D678E1DD36D87 /* Monoid.swift in Sources */,
+				AD7B420755B0F4A9D8B42C73FD8D9196 /* NonEmpty.swift in Sources */,
+				57CD2EA77BFF97066963EDA9E8079078 /* NumericType.swift in Sources */,
+				6C37B9E3C1BDBE213F604AEE9B18958B /* Operators.swift in Sources */,
+				ACA764D94B25641A2B7C41F79F1F5862 /* Optional.swift in Sources */,
+				1854A14AB4C841109DE4710B14C6E966 /* Ordering.swift in Sources */,
+				C1153579A005C6351BF236073B7AB551 /* Semigroup.swift in Sources */,
+				F9B7FD21E2093F57A2D1AEDA19A62756 /* Set.swift in Sources */,
+				E088F952B94DACDA1E297324523055A0 /* SomeError.swift in Sources */,
+				FF7237E6BC209138FDFA23A3ECA797E0 /* SPrelude-dummy.m in Sources */,
+				E1952AC46DA871AB22A7A10DF606FD2D /* String.swift in Sources */,
+				300E52C20E222BF2E2FB4A3B253ED8B4 /* Tuple.swift in Sources */,
+				F6E94477F164B66833FE3710051EE738 /* Unit.swift in Sources */,
+				7B4A6ED72E4F0975CE8433C27F1076C7 /* Unpack.swift in Sources */,
+				20CC9EBAED1528C5250432107A96A16E /* VectorType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E86D71F23CF9E249CC9E0F6FD40FF3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPrelude;
+			target = 4782A95C75048D9AC03520A54483E89B /* SPrelude */;
+			targetProxy = D37A5FD45EA7F67F31CAEB149B334EC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A2F73D3C38207EAD03FF8F64474D375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD66B73E732431257BAE0AFE47BD59A /* Pods-SPrelude_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SPrelude_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SPrelude_Tests/Pods-SPrelude_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		20ED648305C3E34039D3F7C66B232828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF1894275A8EAE435289DFBF3960C5E /* Pods-SPrelude_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SPrelude_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SPrelude_Tests/Pods-SPrelude_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2A64FD7707CAAE253CD3B779373BC97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BB0F1AE48C2EADC7B75C0E9290E97D5 /* Pods-SPrelude_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SPrelude_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SPrelude_Example/Pods-SPrelude_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36D09D38C556B5A87F6F3F81E608A416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9D829C7A15EB7AEC7509C444112169 /* SPrelude.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPrelude/SPrelude-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPrelude/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SPrelude/SPrelude.modulemap";
+				PRODUCT_MODULE_NAME = SPrelude;
+				PRODUCT_NAME = SPrelude;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6488EC37458E0EFD46F5B68B102A6AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2EB2EE1FF949A21EED900E3179C28DB /* Pods-SPrelude_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SPrelude_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SPrelude_Example/Pods-SPrelude_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A69D1E1B7556ABDB2B503F86D6521302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9D829C7A15EB7AEC7509C444112169 /* SPrelude.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPrelude/SPrelude-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPrelude/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SPrelude/SPrelude.modulemap";
+				PRODUCT_MODULE_NAME = SPrelude;
+				PRODUCT_NAME = SPrelude;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC53820C0C1B161A76B2B98A135F57C8 /* Build configuration list for PBXNativeTarget "Pods-SPrelude_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A64FD7707CAAE253CD3B779373BC97C /* Debug */,
+				6488EC37458E0EFD46F5B68B102A6AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD4801FFB841E81D010AAC265F1ED61C /* Build configuration list for PBXNativeTarget "SPrelude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A69D1E1B7556ABDB2B503F86D6521302 /* Debug */,
+				36D09D38C556B5A87F6F3F81E608A416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D766BE63773113BF3B2F8A82215D29DA /* Build configuration list for PBXNativeTarget "Pods-SPrelude_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2F73D3C38207EAD03FF8F64474D375 /* Debug */,
+				20ED648305C3E34039D3F7C66B232828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

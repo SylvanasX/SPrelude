@@ -1,0 +1,16 @@
+PODS:
+  - SPrelude (0.1.0)
+
+DEPENDENCIES:
+  - SPrelude (from `../`)
+
+EXTERNAL SOURCES:
+  SPrelude:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SPrelude: 38e8c45e02e17c0bca43b30882bba5e00650dfb2
+
+PODFILE CHECKSUM: 49d0cb6ca7a7a26e03c0e8faf0c15df19a35a801
+
+COCOAPODS: 1.5.0.beta.1

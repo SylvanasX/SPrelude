@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SPrelude_Example' do
+  pod 'SPrelude', :path => '../'
+
+  target 'SPrelude_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
